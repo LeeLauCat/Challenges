@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta Charset="UTF-8"/>
+        <meta name="viewport" Content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Books</title>
+      
+        <style>
+            body{
+                
+                background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%)
+            }
+            h1 {
+        
+        line-height: 48px;
+        margin: 0;
+        text-align: center;
+      }
+
+      h2 {
+        color:black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        text-align: center;
+        border: 2px solid black;
+        margin: 30px;
+      }
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+      img {
+        display:block;
+        margin:auto;
+        width:400px;
+        border-radius: 10px;
+        box-shadow: none;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+      
+
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>I love Books📚</h1>
+        <h2>Especially fiction novels</h2>
+        <p>
+            "Fiction" refers to literature created from the imagination.
+             Mysteries, science fiction, romance, fantasy, chick lit, crime thrillers are all fiction genres. 
+             Examples of classic fiction include To Kill a Mockingbird by Harper Lee,
+              A Tale of Two Cities by Charles Dickens, 1984 by George Orwell and Pride and Prejudice by Jane Austen. 
+              <a href="https://en.wikipedia.org/wiki/Fiction">Learn more on wikipedia</a><br>
+              I love fiction novels because you get to travel and go on different adventures, live multiple lives all from the 
+              comfort of your home, all you need is a good book, amazing weather and a hot cup of cofee🤗 
+              one of my favorite books is the Harry potter series by british author J.K Rowling    
+        </p>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/078/465/original/HarryPotter.jpg?1682267811" alt="HarryPotter">
+        <button class="adventureButton">
+          MUGGLES Click here!!
+        </button>    
+</div>
+<script>
+  function adventure(){
+    let name=prompt("what is your name?");
+    
+    alert("And now "+name+" let us step out of our comfort zone and persue that flighty temptress Adventure!!😊");
+  }
+  let adventureButton=document.querySelector("button");
+        adventureButton.addEventListener("click",adventure);
+</script>
+    </body>
+</html>
